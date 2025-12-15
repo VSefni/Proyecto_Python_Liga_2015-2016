@@ -10,9 +10,9 @@ def LeerPartidos(nombre_archivo='liga.csv'):
         lector = csv.DictReader(archivo)
         for fila in lector:
             partidos.append({
-                'Fecha': fila['Fecha'],
-                'Equipo 1': fila['Equipo 1'],
-                'Equipo 2': fila['Equipo 2'],
+                'Fecha': fila['Date'],
+                'Equipo 1': fila['Team 1'],
+                'Equipo 2': fila['Team 2'],
                 'FT': fila['FT'],
                 'HT': fila['HT']
             })
